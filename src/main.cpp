@@ -1628,7 +1628,7 @@ int64_t GetBlockValue(int nHeight)
         nSubsidy = 510000 * COIN; // Genesis block
     } else if (nHeight >= 1 && nHeight <= Params().LAST_POW_BLOCK()) {
         nSubsidy = 10000 * COIN; // Premine
-    } else if (nHeight >= Params().LAST_POW_BLOCK()+1 && nHeight <= startamount) {
+    } else if (nHeight >= 401 && nHeight <= startamount) {
         nSubsidy = 10 * COIN; // Launch phase
     } else if (nHeight >= startamount+1 && nHeight <= startamount*2) {
         nSubsidy = 5 * COIN;
